@@ -1,4 +1,4 @@
-var webpack = required ('webpack');
+var webpack = require ('webpack');
 var path = require ('path');
 module.exports = {
     devtool: 'inline-source-map', //dor making debugging easier
@@ -24,6 +24,6 @@ module.exports = {
         contentBase: path.join(__dirname, "public/"),
         port:3030,//hme reloading 
         hot:true,
-        publicpath:"http://localhost:3030/dist/"
+        publicPath:"http://localhost:3030/dist/"
     }
 }
